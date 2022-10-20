@@ -248,12 +248,12 @@
 
         <!--Search bar in the top nav--> 
         <form class="ml-4 w-1/4">   
-            <label for="default-search" class="mb-2 text-sm font-normal text-gray-900 sr-only dark:text-gray-300">Search</label>
+            <label for="default-search" class="mb-2 text-sm font-normal text-gray-900 sr-only dark:text-gray-200">Search</label>
             <div class="relative">
                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                    <i class="text-gray-400 fa-regular fa-search"></i>
+                    <i class="text-gray-200 fa-regular fa-search"></i>
                 </div>
-                <input type="search" id="default-search" class="block p-2 pl-10 w-full text-sm text-gray-200 bg-sky-800 rounded border border-sky-900 focus:ring-gray-500 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Sleuth" required>
+                <input type="search" id="default-search" class="block p-2 pl-10 w-full text-sm text-gray-100 bg-sky-700 rounded border border-sky-700 focus:ring-gray-500 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Sleuth" required>
             </div>
         </form>
     <div class="w-full lg:inline-flex lg:flex-grow lg:w-auto">
@@ -360,27 +360,7 @@
             <img src="/images/sleuth_blue_logo.svg" class="mr-3 h-6 sm:h-7" alt="Sleuth Logo"/>
             <span class="self-center text-md text-gray-700 whitespace-nowrap dark:text-white">Sleuth app</span>
         </a>
-    <ul>
-        <li class="border-t border-gray-200 dark:border-gray-700">
-            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
-                <i class="fa-regular fa-chart-column"></i>
-                <span class="ml-3">Metrics</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
-                <i class="fa-regular fa-bars-progress"></i>
-            <span class="ml-3">Work in progress</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
-                <img class="w-3" src="https://staging.sleuth.io/static/img/heartbeat_green.png" alt="logo"> 
-                <span class="ml-3">Status</span>
-            </a>
-        </li>
-    </ul>
-         <ul class="space-y-2">
+        <ul class="space-y-2">
             <li>
                 <button type="button" class="flex items-center p-2.5 mb-2 mt-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-environment" data-collapse-toggle="dropdown-environment">
                     <div class="flex-1 text-left whitespace-nowrap">
@@ -405,6 +385,26 @@
                         </div>
                     </li>
         </ul>
+    <ul>
+        <li class="border-t border-gray-200 dark:border-gray-700">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                <i class="fa-regular fa-chart-column"></i>
+                <span class="ml-3">Metrics</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                <i class="fa-regular fa-bars-progress"></i>
+            <span class="ml-3">Work in progress</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                <img class="w-3" src="https://staging.sleuth.io/static/img/heartbeat_green.png" alt="logo"> 
+                <span class="ml-3">Status</span>
+            </a>
+        </li>
+    </ul>
         <li>
             <button type="button" class="flex items-center p-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                 <i class="fa-solid fa-ellipsis"></i>
