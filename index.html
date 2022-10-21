@@ -26,18 +26,25 @@
                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                             <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
-                        <input type="search" id="spotlight-search" class="block p-4 pl-10 w-full h-16 text-md rounded-t-md text-gray-900 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Search Sleuth" required>
-                        <button type="submit" class="text-white absolute right-3.5 bottom-3.5 bg-sky-700 hover:bg-sky-800 font-normal rounded text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" data-modal-toggle="spotlightModal">Search</button>
+                        <input type="search" id="spotlight-search" class="block p-4 mb-2 pl-10 w-full h-16 text-md rounded-t-md text-gray-900 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Search Sleuth" required>
+                        <button type="submit" class="text-white absolute right-3.5 bottom-3.5 bg-sky-700 hover:bg-sky-800 font-normal rounded text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700" data-modal-toggle="spotlightModal">Search</button>
                     </div>
                 </form>
 
             <!-- Modal body -->
+                <div class="ml-2 mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-sky-700 focus:text-white font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700">
+                    <i class="fa-regular fa-font-case mr-2 text-gray-500"></i>
+                    <a href="#">
+                    Only search titles
+                    </a>
+                </div>
+                
 
-                <!-- Authors dropdown -->
-            <button id="dropdownUserButton" data-dropdown-toggle="dropdownUser" data-dropdown-placement="bottom-start" class="ml-2 mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Projects <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                <!-- Projects dropdown -->
+            <button id="dropdownUserButton" data-dropdown-toggle="dropdownUser" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">In project <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             <!-- Dropdown menu -->
-            <div id="dropdownUser" class="hidden z-10 w-60 bg-white rounded shadow dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
-            <ul class="overflow-y-auto py-1 h-32 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserButton">
+            <div id="dropdownUser" class="hidden z-10 w-48 bg-white rounded shadow-md dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+            <ul class="overflow-y-auto py-1 h-max-32 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserButton">
                 <li>
                 <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     Sleuth app
@@ -57,10 +64,10 @@
             </div>
             
             <!-- Authors dropdown -->
-            <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Authors <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Authored by <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             <!-- Dropdown menu -->
-            <div id="dropdownUsers" class="hidden z-10 w-60 bg-white rounded shadow dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
-            <ul class="overflow-y-auto py-1 h-32 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+            <div id="dropdownUsers" class="hidden z-10 w-48 bg-white rounded shadow-md dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+            <ul class="overflow-y-auto py-1 h-max-32text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
                 <li>
                 <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     <img class="mr-2 w-6 h-6 rounded-full" src="/images/Dylan_Etkin.jpg" alt="Dylan image">
@@ -82,10 +89,39 @@
             </ul>
             </div>
 
+               <!-- Date dropdown -->
+            <button id="dropdownSearchButton" data-dropdown-toggle="dropdownSearch" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Last 14 days <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            <!-- Dropdown menu -->
+
+            <div id="dropdownSearch" class="hidden z-10 w-44 bg-white rounded shadow-md dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+            <ul class="overflow-y-auto py-1 h-max-40 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
+                <li>
+                <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    Today
+                </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                        Last 7 days
+                    </a>
+                    </li>
+                <li>
+                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                        Last 14 days
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                        Last 30 days
+                    </a>
+                </li>
+            </ul>
+            </div>
+
         <!--List of suggestions-->    
-    
+
            <div class="p-4 space-y-2">
-                        <p class="font-semibold divide-y divide-gray-200 text-xs leading-relaxed text-gray-500 dark:text-gray-400">
+                        <p class="font-semibold text-xs leading-relaxed text-gray-500 dark:text-gray-400">
                             Last 7 days
                         </p>
                         <ul>
@@ -410,7 +446,7 @@
     
     
 
-        <!--Search bar in the top nav--> 
+        <!--Search bar in the top nav
         <form class="ml-4 w-1/4">   
             <label for="default-search" class="mb-2 text-sm font-normal text-gray-900 sr-only dark:text-gray-200">Search</label>
             <div class="relative">
@@ -419,7 +455,7 @@
                 </div>
                 <input type="search" id="default-search" class="block p-2 pl-10 w-full text-sm text-gray-100 bg-primary-800 rounded border border-primary-800 focus:ring-gray-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Sleuth" required>
             </div>
-        </form>
+        </form>--> 
     <div class="w-full lg:inline-flex lg:flex-grow lg:w-auto">
         <div class="lg:inline-flex lg:flex-row lg:ml-auto items-center">                    
                 
