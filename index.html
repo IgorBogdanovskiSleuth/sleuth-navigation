@@ -259,83 +259,13 @@
 <!--Top global navigation-->
 
 <topnav class="flex items-center p-1 bg-primary-900 flex-wrap sticky top-0 z-10">
-    <!--Logo only
-    <a href="#" class="p-2 mr-2 ml-1 mt-2 mb-2 inline-flex items-center hover:bg-primary-800 rounded">
-        <img class="h-6" src="/images/sleuth_logo.svg" alt="">
-    </a>
-    -->
-
-    <button id="help" data-dropdown-toggle="dropdownHome" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-2 mr-4 p-2 items-center text-md font-medium text-gray-200 rounded hover:bg-primary-800" type="button">
-        <span class="sr-only">Open user menu</span>
-        <img class="h-6" src="/images/sleuth_logo.svg" alt="">
-        <svg class="w-4 h-4 mx-1.5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-    </button>
-    
-    <!-- Dropdown menu -->
-    <div id="dropdownHome" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg">
-        <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
-        
-        <!--Search in the logo dropdown.
-        <li>
-            
-
-            <div class="flex items-center pl-2 rounded hover:bg-gray-200">
-                <i class="fa-regular fa-search"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded">Search</label>
-            </div>
-        </li>
-            -->
-
-            <!--Trends in the logo dropdown.
-        <li>
-            <div class="flex items-center pl-2 rounded hover:bg-gray-200">
-                <i class="fa-regular fa-chart-line-up"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded">Trends</label>
-            </div>
-            </li>
-
-        -->
-        <!--Compare in the logo dropdown.
-            <li>
-            <div class="flex items-center pl-2 rounded hover:bg-gray-200">
-                <i class="fa-regular fa-down-left-and-up-right-to-center"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded">Comapre</label>
-            </div>
-            </li>
-        -->
-
-            <li>
-            <div class="flex items-center pl-2 hover:bg-gray-200">
-                <i class="fa-regular fa-heart-pulse"></i>
-                <label class="py-2 ml-2 px-1 w-full text-sm text-gray-700">Status</label>
-            </div>
-            </li>
-            <li>
-            <div class="flex items-center pl-2 hover:bg-gray-200">
-                <i class="fa-regular fa-user-plus"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700">Add users</label>
-            </div>
-            </li>
-        <li>
-        
-        </ul>
-        <div class="py-1 text-sm text-gray-700" id="tooltip-default" role="tooltip">
-            <div class="flex items-center pl-2 hover:bg-gray-200">
-                <i class="fa-regular fa-cog"></i>
-                <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200">Org settings</a>
-            </div>
-            <div class="flex items-center pl-2 hover:bg-gray-200">
-                <i class="fa-regular fa-credit-card"></i>
-                <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200">Billing</a>
-            </div>
-        </div>
-    </div>
+      
 
     <!--Project, team and label selector-->
-    <div class="ml-16">
+    <div class="ml-2">
         <div>
         <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" data-dropdown-placement="bottom-start" class="text-gray-200 hover:bg-primary-800 hover:text-white p-2 rounded focus:ring-4 focus:outline-none focus:ring-primary-700 font-medium text-sm px-2 py-2.5 text-center inline-flex items-center" type="button">
-            <i class="fa-regular fa-bars mr-1"></i>
+            <i class="fa-regular fa-bars mr-2"></i>
             <a class="text-sm font-normal">Sleuth app</a>
         </button>
         </div>
@@ -399,6 +329,7 @@
                     </ul>
                 </div>
             </li>
+            <!--Labels
             <li>
                 <div class="flex items-center pl-2 hover:bg-gray-200">
                     <i class="fa-regular fa-tag"></i>
@@ -416,7 +347,7 @@
                     
                     </ul>
                 </div>
-            </li>
+            </li>-->
             </ul>
         </div>
     </div>
@@ -457,26 +388,29 @@
             </div>
         </form>--> 
     <div class="w-full lg:inline-flex lg:flex-grow lg:w-auto">
-        <div class="lg:inline-flex lg:flex-row lg:ml-auto items-center">                    
-                
-            <a class="text-gray-200 inline-flex p-2 mr-4 hover:bg-primary-800 rounded" alt="Trends" data-modal-toggle="spotlightModal">
-                <i class="fa-regular fa-magnifying-glass"></i>
+        <div class="lg:inline-flex lg:flex-row lg:ml-auto items-center"> 
+            <button class="bg-primary-800 text-white hover:bg-primary-700 hover:text-white p-2 mr-2 rounded focus:ring-4 focus:outline-none focus:ring-primary-700 font-normal text-sm px-4 py-2.5 text-center inline-flex items-center">
+                <i class="fa-regular fa-square-plus mr-3"></i>
+                Add 
+            </button>  
+            <a class="text-gray-200 inline-flex p-2 mr-2 hover:bg-primary-800 text-sm rounded px-2 py-2.5 text-center items-center" alt="Trends" data-modal-toggle="spotlightModal">
+                <i class="fa-regular fa-magnifying-glass mr-2"></i>
+                Search
             </a> 
-
             <button class="text-gray-200 hover:bg-primary-800 hover:text-white p-2 mr-2 rounded focus:ring-4 focus:outline-none focus:ring-primary-700 font-normal text-sm px-2 py-2.5 text-center inline-flex items-center">
-                    <i class="fa-regular fa-chart-line-up mr-1"></i>
+                    <i class="fa-regular fa-chart-line-up mr-2"></i>
                     Trends 
             </button> 
             <button class="text-gray-200 hover:bg-primary-800 hover:text-white p-2 mr-2 rounded focus:ring-4 focus:outline-none focus:ring-primary-700 font-normal text-sm px-2 py-2.5 text-center inline-flex items-center">
-                <i class="fa-regular fa-down-left-and-up-right-to-center mr-1"></i>
+                <i class="fa-regular fa-down-left-and-up-right-to-center mr-2"></i>
                 Compare 
             </button>
             <button class="text-gray-200 hover:bg-primary-800 hover:text-white p-2 mr-2 rounded focus:ring-4 focus:outline-none focus:ring-primary-700 font-normal text-sm px-2 py-2.5 text-center inline-flex items-center">
-                <i class="fa-regular fa-heart-pulse mr-1"></i>
+                <i class="fa-regular fa-heart-pulse mr-2"></i>
                 Status 
             </button>
                 
-                <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 p-2 items-center text-md font-medium text-gray-200 rounded hover:bg-primary-800" type="button">
+                <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 pt-2 pb-2 items-center text-md font-medium text-gray-200 rounded hover:bg-primary-800" type="button">
                     <span class="sr-only">Open user menu</span>
                     <i class="fa-regular fa-circle-question ml-1"></i>
                     <svg class="w-4 h-4 mx-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -485,7 +419,7 @@
                 <!-- Dropdown menu -->
                 <div id="dropdownHelp" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
                     
-                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+                    <ul class="text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
                     <li>
                         <div class="flex items-center pl-2 hover:bg-gray-200">
                             <i class="fa-regular fa-book"></i>
@@ -538,6 +472,18 @@
                         <label class="py-2 ml-2 w-full text-sm text-gray-700">Manage account</label>
                     </div>
                 </li>
+                <li>
+                    <div class="flex items-center pl-2 hover:bg-gray-200">
+                        <i class="fa-regular fa-cog"></i>
+                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Org settings</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center pl-2 hover:bg-gray-200">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Billing</label>
+                    </div>
+                </li>
                 
                 </ul>
                 <div class="py-1 text-sm text-gray-700">
@@ -558,36 +504,28 @@
     <!--Side content-aware anvigation bar-->
 
 <aside class="w-64 fixed z-0" aria-label="Sidebar">
-    <div class="overflow-auto scrollbar-hide h-screen py-5 px-3 bg-gray-100">
-        <a href="#" class="flex items-center pl-0 mb-5">
-            <img src="/images/sleuth_blue_logo.svg" class="mr-3 h-6 sm:h-7" alt="Sleuth Logo"/>
-            <span class="self-center text-md text-gray-700 whitespace-nowrap">Sleuth app</span>
-        </a>
-        <ul class="space-y-2 border-t border-gray-200">
-            <li>
-                <button type="button" class="flex items-center p-2.5 mb-2 mt-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300" aria-controls="dropdown-environment" data-collapse-toggle="dropdown-environment">
-                    <div class="flex-1 text-left whitespace-nowrap">
-                    <span class="bg-green-100 text-green-800 text-xs font-semibold border border-green-500 mr-2 px-2 py-1 rounded">Production</span>
-                    </div>
-                    <i class="fa-regular fa-angle-down"></i>
-                </button>
-                <ul id="dropdown-environment" class="hidden ml-4 py-4 space-y-2">
+    <div class="overflow-auto scrollbar-hide h-screen py-4 px-3 bg-gray-100">
+
+    <ul>
+        <li>
+            <button type="button" class="flex items-center p-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300" aria-controls="env-example" data-collapse-toggle="env-example">
+                <i class="fa-regular fa-server"></i>
+                <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item="">Production</span>
+                <i class="fa-regular fa-angle-down"></i>
+            </button>
+                <ul id="env-example" class="hidden ml-4 py-4 space-y-2">
                     <li>
-                        <div class="flex p-2 items-center rounded-lg transition duration-75 group">
-                            <div class="flex-1 text-left whitespace-nowrap">
-                                <i class="pr-2 text-green-500 fa-solid fa-check"></i>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold border border-green-500 mr-2 px-2 py-1 rounded">Production</span>
+                        <span class="text-xs font-semibold text-gray-600">ENVIRONMENTS</span>
+                            <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
+                                <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Production</a>
                             </div>
-                        </div>
                     </li>
                     <li>
-                        <div class="flex p-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
-                            <div class="flex-1 text-left whitespace-nowrap">
-                                <span class="bg-orange-100 text-orange-800 text-xs font-semibold border border-orange-500 mr-2 px-2 py-1 rounded">Staging</span>
-                            </div>                        
-                        </div>
+                        <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
+                        <span>Staging</span>
+                        </a>
                     </li>
-        </ul>
+            </ul>
     <ul>
         <li>
             <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
@@ -596,20 +534,20 @@
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-bars-progress"></i>
             <span class="ml-3">Work in progress</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <img class="w-3" src="https://staging.sleuth.io/static/img/heartbeat_green.png" alt="logo"> 
                 <span class="ml-3">Status</span>
             </a>
         </li>
-    </ul>
+    <ul>
         <li>
-            <button type="button" class="flex items-center p-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+            <button type="button" class="flex items-center p-2 mt-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                 <i class="fa-solid fa-ellipsis"></i>
                 <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item="">More</span>
                 <i class="fa-regular fa-angle-down"></i>
@@ -700,7 +638,7 @@
                     </div>
             </ul>
         </li>
-        
+        <!--Automations
         <li>
             <a href="#" class="flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-bolt"></i>
@@ -708,6 +646,8 @@
                 <span class="inline-flex justify-center items-center px-2 ml-3 text-xs text-orange-700 bg-orange-200 border border-orange-700 rounded">Beta</span>
             </a>
         </li>
+        -->
+        <!--Notifications
         <li>
             <a href="#" class="flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-bell"></i>
@@ -715,9 +655,9 @@
                 
             </a>
         </li>
-        
+        -->
             <li>
-                <a href="#" class="mb-8 flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
+                <a href="#" class="mb-4 flex items-center fixed bottom-0 p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-cog"></i>
                 <span class="flex-1 ml-3 whitespace-nowrap">Settings</span>
                 
