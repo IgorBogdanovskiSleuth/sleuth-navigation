@@ -18,21 +18,21 @@
     <div id="spotlightModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
         <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow">
                 <!-- Search bar -->
                 <form>   
-                    <label for="default-search" class="mb-2 text-sm font-normal text-gray-900 sr-only dark:text-gray-300">Search</label>
+                    <label for="default-search" class="mb-2 text-sm font-normal text-gray-900 sr-only">Search</label>
                     <div class="relative">
                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
-                        <input type="search" id="spotlight-search" class="block p-4 mb-2 pl-10 w-full h-16 text-md rounded-t-md text-gray-900 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Search Sleuth" required>
-                        <button type="submit" class="text-white absolute right-3.5 bottom-3.5 bg-sky-700 hover:bg-sky-800 font-normal rounded text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700" data-modal-toggle="spotlightModal">Search</button>
+                        <input type="search" id="spotlight-search" class="block p-4 mb-2 pl-10 w-full h-16 text-md rounded-t-md text-gray-900 bg-gray-100 border-gray-300" placeholder="Search Sleuth" required>
+                        <button type="submit" class="text-white absolute right-3.5 bottom-3.5 bg-sky-700 hover:bg-sky-800 font-normal rounded text-sm px-4 py-2" data-modal-toggle="spotlightModal">Search</button>
                     </div>
                 </form>
 
             <!-- Modal body -->
-                <div class="ml-2 mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700">
+                <div class="ml-2 mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center">
                     <i class="fa-regular fa-font-case mr-2 text-gray-500"></i>
                     <a href="#">
                     Only search titles
@@ -41,22 +41,22 @@
                 
 
                 <!-- Projects dropdown -->
-            <button id="dropdownUserButton" data-dropdown-toggle="dropdownUser" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">In project <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            <button id="dropdownUserButton" data-dropdown-toggle="dropdownUser" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center" type="button">In project <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             <!-- Dropdown menu -->
-            <div id="dropdownUser" class="hidden z-10 w-48 bg-white rounded shadow-md dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
-            <ul class="overflow-y-auto py-1 h-max-32 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserButton">
+            <div id="dropdownUser" class="hidden z-10 w-48 bg-white rounded shadow-md" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+            <ul class="overflow-y-auto py-1 h-max-32 text-gray-700" aria-labelledby="dropdownUserButton">
                 <li>
-                <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100">
                     Sleuth app
                 </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100">
                         Sleuth clients
                     </a>
                     </li>
                 <li>
-                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100">
                         Test deploys
                     </a>
                 </li>
@@ -64,24 +64,24 @@
             </div>
             
             <!-- Authors dropdown -->
-            <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Authored by <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center" type="button">Authored by <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             <!-- Dropdown menu -->
-            <div id="dropdownUsers" class="hidden z-10 w-48 bg-white rounded shadow-md dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
-            <ul class="overflow-y-auto py-1 h-max-32text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+            <div id="dropdownUsers" class="hidden z-10 w-48 bg-white rounded shadow-md" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+            <ul class="overflow-y-auto py-1 h-max-32text-gray-700" aria-labelledby="dropdownUsersButton">
                 <li>
-                <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100">
                     <img class="mr-2 w-6 h-6 rounded-full" src="/images/Dylan_Etkin.jpg" alt="Dylan image">
                     Dylan Etkin
                 </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100">
                         <img class="mr-2 w-6 h-6 rounded-full" src="https://assets.website-files.com/5fd148f419b866c77225d463/5fd148f419b86600ba25d4ff_Don.jpg" alt="Don image">
                         Don Brown
                     </a>
                     </li>
                 <li>
-                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100">
                         <img class="mr-2 w-6 h-6 rounded-full" src="https://assets.website-files.com/5fd148f419b866c77225d463/5fd148f419b8667bde25d56b_MK%20Headshot.jpg" alt="MK image">
                         Michael Knighten
                     </a>
@@ -90,28 +90,28 @@
             </div>
 
                <!-- Date dropdown -->
-            <button id="dropdownSearchButton" data-dropdown-toggle="dropdownSearch" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Last 14 days <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            <button id="dropdownSearchButton" data-dropdown-toggle="dropdownSearch" data-dropdown-placement="bottom-start" class="mt-2 text-gray-900 bg-blue-white border border-bg-gray-500 hover:bg-gray-200 focus:bg-gray-200 font-medium rounded text-xs px-2 py-1 text-center inline-flex items-center" type="button">Last 14 days <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             <!-- Dropdown menu -->
 
-            <div id="dropdownSearch" class="hidden z-10 w-44 bg-white rounded shadow-md dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
-            <ul class="overflow-y-auto py-1 h-max-40 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
+            <div id="dropdownSearch" class="hidden z-10 w-44 bg-white rounded shadow-md" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+            <ul class="overflow-y-auto py-1 h-max-40 text-gray-700" aria-labelledby="dropdownSearchButton">
                 <li>
-                <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100">
                     Today
                 </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#" class="flex items-center py-2 px-4 text-sm hover:bg-gray-100">
                         Last 7 days
                     </a>
                     </li>
                 <li>
-                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100">
                         Last 14 days
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#" class="flex items-center py-2 px-4 text-sm  hover:bg-gray-100">
                         Last 30 days
                     </a>
                 </li>
@@ -121,90 +121,90 @@
         <!--List of suggestions-->    
 
            <div class="p-4 space-y-2">
-                        <p class="font-semibold text-xs leading-relaxed text-gray-400 dark:text-gray-400">
+                        <p class="font-semibold text-xs leading-relaxed text-gray-400">
                             Last 7 days
                         </p>
                         <ul>
                             <li>
-                                <div class="items-center rounded pl-2 py-4 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="items-center rounded pl-2 py-4 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-code-pull-request"></i>
-                                    <label class="py-2 ml-1 text-sm text-gray-700 dark:text-gray-300">SD-6601: Remove redundant logging</label>
-                                    <label class="ml-2 text-sm text-gray-400 dark:text-gray-300">- Sleuth app</label>
+                                    <label class="py-2 ml-1 text-sm text-gray-700">SD-6601: Remove redundant logging</label>
+                                    <label class="ml-2 text-sm text-gray-400">- Sleuth app</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-rocket"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">All deploys</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth clients</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">All deploys</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth clients</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-clipboard-check"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">Issue SD-6601 deployed to master: Remove redundant logg...</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Test deploys</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">Issue SD-6601 deployed to master: Remove redundant logg...</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Test deploys</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-code-commit"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">Commit c72a769 deployed to master</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth App</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">Commit c72a769 deployed to master</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth App</label>
                                 </div>
                             </li>
                             </ul>
-                            <p class="font-semibold divide-y divide-gray-200 text-xs leading-relaxed text-gray-400 dark:text-gray-400">
+                            <p class="font-semibold divide-y divide-gray-200 text-xs leading-relaxed text-gray-400">
                                 Last 14 days
                             </p>
                             <ul>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-code-pull-request"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">Revert "SD-6507: Update python packages"</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth App</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">Revert "SD-6507: Update python packages"</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth App</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-code-pull-request"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">SD-6472: Add back some logging for pr event dates</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth App</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">SD-6472: Add back some logging for pr event dates</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth App</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-code-pull-request"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">SD-6507: Update python packages</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth App</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">SD-6507: Update python packages</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth App</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-code-commit"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">Commit 6280316 deployed to master</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth App</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">Commit 6280316 deployed to master</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth App</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-code-commit"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">Commit 96da21b deployed to master</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth App</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">Commit 96da21b deployed to master</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth App</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-rocket"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">c40e244 GitBook: [#626] Update for issue notify/transition...</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth clients</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">c40e244 GitBook: [#626] Update for issue notify/transition...</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth clients</label>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <div class="flex items-center rounded pl-2 py-2 hover:bg-gray-200">
                                     <i class="text-gray-500 fa-regular fa-rocket"></i>
-                                    <label class="py-2 ml-2 text-sm text-gray-700 dark:text-gray-300">80e7789 GitBook: [#620] Issue Tracker CLT</label>
-                                    <label class="ml-2 text-sm justify-end text-gray-400 dark:text-gray-300">- Sleuth clients</label>
+                                    <label class="py-2 ml-2 text-sm text-gray-700">80e7789 GitBook: [#620] Issue Tracker CLT</label>
+                                    <label class="ml-2 text-sm justify-end text-gray-400">- Sleuth clients</label>
                                 </div>
                             </li>
                         </ul>
@@ -221,34 +221,34 @@
 <div id="defaultModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
     <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
         <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <div class="relative bg-white rounded-lg shadow">
             <!-- Modal header -->
-            <div class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
+            <div class="flex justify-between items-start p-4 rounded-t border-b">
                 <i class="text-gray-600 items-center pr-2 text-lg fa-regular fa-inbox"></i>
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 class="text-xl font-semibold text-gray-900">
                     Create a new project
                 </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="defaultModal">
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="defaultModal">
                     <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     <span class="sr-only">Close modal</span>
                 </button>
             </div>
             <!-- Modal body -->
             <div class="p-6 space-y-6">
-                <p class="text-base leading-relaxed text-gray-900 dark:text-gray-400">
+                <p class="text-base leading-relaxed text-gray-900">
                     <b>+ Add a project</b> might trigger a wizard in a modal where you would go through all the steps of creating a new project in Sleuth.
                 </p>
-                <p class="text-base leading-relaxed text-gray-900 dark:text-gray-400">
+                <p class="text-base leading-relaxed text-gray-900">
                     The other option would be to just open the existing wizard in focus mode.
                 </p>
-                <p class="text-base leading-relaxed text-gray-900 dark:text-gray-400">
+                <p class="text-base leading-relaxed text-gray-900">
                     All of this is mostly to illustrate the fact that I can create a modal that is opened by a button 🙌
                 </p>
             </div>
             <!-- Modal footer -->
-            <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-                <button data-modal-toggle="defaultModal" type="button" class="text-white bg-sky-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded text-sm pl-4 pr-4 pt-2 pb-2 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
-                <button data-modal-toggle="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded border border-gray-200 text-sm font-medium pl-4 pr-4 pt-2 pb-2 px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+            <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200">
+                <button data-modal-toggle="defaultModal" type="button" class="text-white bg-sky-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded text-sm pl-4 pr-4 pt-2 pb-2 py-2.5 text-center">I accept</button>
+                <button data-modal-toggle="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded border border-gray-200 text-sm font-medium pl-4 pr-4 pt-2 pb-2 px-5 py-2.5 hover:text-gray-900 focus:z-10">Decline</button>
             </div>
         </div>
     </div>
@@ -265,93 +265,93 @@
     </a>
     -->
 
-    <button id="help" data-dropdown-toggle="dropdownHome" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-2 mr-4 p-2 items-center text-md font-medium text-gray-200 rounded hover:bg-primary-800 dark:hover:text-blue-500" type="button">
+    <button id="help" data-dropdown-toggle="dropdownHome" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-2 mr-4 p-2 items-center text-md font-medium text-gray-200 rounded hover:bg-primary-800" type="button">
         <span class="sr-only">Open user menu</span>
         <img class="h-6" src="/images/sleuth_logo.svg" alt="">
         <svg class="w-4 h-4 mx-1.5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
     </button>
     
     <!-- Dropdown menu -->
-    <div id="dropdownHome" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg dark:bg-gray-700 dark:divide-gray-600">
-        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+    <div id="dropdownHome" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg">
+        <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
         
         <!--Search in the logo dropdown.
         <li>
             
 
-            <div class="flex items-center pl-2 rounded hover:bg-gray-200 dark:hover:bg-gray-600">
+            <div class="flex items-center pl-2 rounded hover:bg-gray-200">
                 <i class="fa-regular fa-search"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded dark:text-gray-300">Search</label>
+                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded">Search</label>
             </div>
         </li>
             -->
 
             <!--Trends in the logo dropdown.
         <li>
-            <div class="flex items-center pl-2 rounded hover:bg-gray-200 dark:hover:bg-gray-600">
+            <div class="flex items-center pl-2 rounded hover:bg-gray-200">
                 <i class="fa-regular fa-chart-line-up"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded dark:text-gray-300">Trends</label>
+                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded">Trends</label>
             </div>
             </li>
 
         -->
         <!--Compare in the logo dropdown.
             <li>
-            <div class="flex items-center pl-2 rounded hover:bg-gray-200 dark:hover:bg-gray-600">
+            <div class="flex items-center pl-2 rounded hover:bg-gray-200">
                 <i class="fa-regular fa-down-left-and-up-right-to-center"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded dark:text-gray-300">Comapre</label>
+                <label class="py-2 ml-2 w-full text-sm text-gray-700 rounded">Comapre</label>
             </div>
             </li>
         -->
 
             <li>
-            <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+            <div class="flex items-center pl-2 hover:bg-gray-200">
                 <i class="fa-regular fa-heart-pulse"></i>
-                <label class="py-2 ml-2 px-1 w-full text-sm text-gray-700 dark:text-gray-300">Status</label>
+                <label class="py-2 ml-2 px-1 w-full text-sm text-gray-700">Status</label>
             </div>
             </li>
             <li>
-            <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+            <div class="flex items-center pl-2 hover:bg-gray-200">
                 <i class="fa-regular fa-user-plus"></i>
-                <label class="py-2 ml-2 w-full text-sm text-gray-700 dark:text-gray-300">Add users</label>
+                <label class="py-2 ml-2 w-full text-sm text-gray-700">Add users</label>
             </div>
             </li>
         <li>
         
         </ul>
-        <div class="py-1 text-sm text-gray-700 dark:text-gray-200" id="tooltip-default" role="tooltip">
-            <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+        <div class="py-1 text-sm text-gray-700" id="tooltip-default" role="tooltip">
+            <div class="flex items-center pl-2 hover:bg-gray-200">
                 <i class="fa-regular fa-cog"></i>
-                <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Org settings</a>
+                <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200">Org settings</a>
             </div>
-            <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+            <div class="flex items-center pl-2 hover:bg-gray-200">
                 <i class="fa-regular fa-credit-card"></i>
-                <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200">Billing</a>
             </div>
         </div>
     </div>
 
     <!--Project, team and label selector-->
-    <div class="ml-40">
+    <div class="ml-16">
         <div>
-        <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" data-dropdown-placement="bottom-start" class="text-gray-200 hover:bg-primary-800 hover:text-white p-2 rounded focus:ring-4 focus:outline-none focus:ring-primary-700 font-medium text-sm px-2 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+        <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" data-dropdown-placement="bottom-start" class="text-gray-200 hover:bg-primary-800 hover:text-white p-2 rounded focus:ring-4 focus:outline-none focus:ring-primary-700 font-medium text-sm px-2 py-2.5 text-center inline-flex items-center" type="button">
             <i class="fa-regular fa-bars mr-1"></i>
             <a class="text-sm font-normal">Sleuth app</a>
         </button>
         </div>
         <!-- Dropdown menu -->
-        <div id="dropdown" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="multiLevelDropdownButton">
+        <div id="dropdown" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="multiLevelDropdownButton">
             
             <li>
                 <span class="m-2 text-xs font-semibold text-gray-600">SWITCH TO</span>
-                <div class="flex items-center mt-1 pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                <div class="flex items-center mt-1 pl-2 hover:bg-gray-200">
                     <i class="fa-regular fa-inbox"></i>
-                <button id="doubleDropdownButtonProjects" data-dropdown-toggle="doubleDropdownProjects" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Projects<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                <button id="doubleDropdownButtonProjects" data-dropdown-toggle="doubleDropdownProjects" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200">Projects<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                 </button>
                 </div>
-                <div id="doubleDropdownProjects" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
-                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButtonProjects">
+                <div id="doubleDropdownProjects" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
+                    <ul class="py-1 text-sm text-gray-700" aria-labelledby="doubleDropdownButtonProjects">
                     <li>
                         <div class="flex items-center pl-2 bg-gray-200">
                             <i class="text-green-500 fa-solid fa-check"></i>
@@ -359,18 +359,18 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sleuth clients</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Sleuth clients</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Test deploys</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Test deploys</a>
                     </li>
                     <div class="py-1">
                     <li>
-                        <button class="block py-2 px-4 pr-16 text-primary-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="defaultModal" >
+                        <button class="block py-2 px-4 pr-16 text-primary-700 hover:bg-gray-200" data-modal-toggle="defaultModal" >
                             + Add a Project
                         </button>
                         <!--Normal dropdown button
-                        <a href="#" class="block py-2 px-4 text-blue-500 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">+ Add a project</a>
+                        <a href="#" class="block py-2 px-4 text-blue-500 hover:bg-gray-200">+ Add a project</a>
                         -->
                     </li>
                 </div>
@@ -379,39 +379,39 @@
                 </div>
             </li>
             <li>
-                <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                <div class="flex items-center pl-2 hover:bg-gray-200">
                     <i class="fa-regular fa-users"></i>
-                    <button id="doubleDropdownButtonTeams" data-dropdown-toggle="doubleDropdownTeams" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Teams<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    <button id="doubleDropdownButtonTeams" data-dropdown-toggle="doubleDropdownTeams" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200">Teams<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                     </button>
                 </div>
-                <div id="doubleDropdownTeams" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
-                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButtonTeams">
+                <div id="doubleDropdownTeams" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
+                    <ul class="py-1 text-sm text-gray-700" aria-labelledby="doubleDropdownButtonTeams">
                     <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Backend</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Backend</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Frontend</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Frontend</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">SRE</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-200">SRE</a>
                     </li>
                 
                     </ul>
                 </div>
             </li>
             <li>
-                <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                <div class="flex items-center pl-2 hover:bg-gray-200">
                     <i class="fa-regular fa-tag"></i>
-                <button id="doubleDropdownButtonLabels" data-dropdown-toggle="doubleDropdownLabels" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Labels<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                <button id="doubleDropdownButtonLabels" data-dropdown-toggle="doubleDropdownLabels" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200">Labels<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                 </button>
             </div>
-                <div id="doubleDropdownLabels" class="hidden z-10 w-48 bg-white divide-y divide-gray-200 shadow-lg dark:bg-gray-700" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
-                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButtonLabels">
+                <div id="doubleDropdownLabels" class="hidden z-10 w-48 bg-white divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
+                    <ul class="py-1 text-sm text-gray-700" aria-labelledby="doubleDropdownButtonLabels">
                     <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Applications</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Applications</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Clients</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Clients</a>
                     </li>
                     
                     </ul>
@@ -448,22 +448,24 @@
 
         <!--Search bar in the top nav
         <form class="ml-4 w-1/4">   
-            <label for="default-search" class="mb-2 text-sm font-normal text-gray-900 sr-only dark:text-gray-200">Search</label>
+            <label for="default-search" class="mb-2 text-sm font-normal text-gray-900 sr-only">Search</label>
             <div class="relative">
                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                     <i class="text-gray-300 fa-regular fa-search"></i>
                 </div>
-                <input type="search" id="default-search" class="block p-2 pl-10 w-full text-sm text-gray-100 bg-primary-800 rounded border border-primary-800 focus:ring-gray-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Sleuth" required>
+                <input type="search" id="default-search" class="block p-2 pl-10 w-full text-sm text-gray-100 bg-primary-800 rounded border border-primary-800 focus:ring-gray-500 focus:border-primary-500" placeholder="Search Sleuth" required>
             </div>
         </form>--> 
     <div class="w-full lg:inline-flex lg:flex-grow lg:w-auto">
         <div class="lg:inline-flex lg:flex-row lg:ml-auto items-center">                    
                 
-            <!--
-                <button class="text-gray-200 inline-flex p-2 m-2 hover:bg-primary-800 rounded">
-                    <i class="fa-regular fa-puzzle-piece"></i>  
-                </button>
-                -->
+            <button class="text-gray-200 inline-flex p-2 mr-4 hover:bg-primary-800 rounded">
+                <i class="fa-regular fa-font-case mr-2 text-gray-500"></i>
+                <a href="#">
+                Only search titles
+                </a>
+            </button>    
+
                 <a class="text-gray-200 inline-flex p-2 mr-4 hover:bg-primary-800 rounded" alt="Trends" data-modal-toggle="spotlightModal">
                     <i class="fa-regular fa-magnifying-glass"></i>
                 </a>
@@ -475,75 +477,78 @@
                 <a class="text-gray-200 inline-flex p-2 mr-4 hover:bg-primary-800 rounded" alt="Trends">
                     <i class="fa-regular fa-chart-line-up"></i>
                 </a>
+                <a class="text-gray-200 inline-flex p-2 mr-4 hover:bg-primary-800 rounded" alt="Trends">
+                    <i class="fa-regular fa-heart-pulse"></i>
+                </a>
                 
-                <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 p-2 items-center text-md font-medium text-gray-200 rounded hover:bg-primary-800 dark:hover:text-blue-500" type="button">
+                <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 p-2 items-center text-md font-medium text-gray-200 rounded hover:bg-primary-800" type="button">
                     <span class="sr-only">Open user menu</span>
                     <i class="fa-regular fa-circle-question ml-1"></i>
                     <svg class="w-4 h-4 mx-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </button>
                                         
                 <!-- Dropdown menu -->
-                <div id="dropdownHelp" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg dark:bg-gray-700 dark:divide-gray-600" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+                <div id="dropdownHelp" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
                     
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
                     <li>
-                        <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                        <div class="flex items-center pl-2 hover:bg-gray-200">
                             <i class="fa-regular fa-book"></i>
-                            <label class="py-2 ml-2 w-full text-sm text-gray-700 dark:text-gray-300">Documentation</label>
+                            <label class="py-2 ml-2 w-full text-sm text-gray-700">Documentation</label>
                         </div>
                         </li>
                     <li>
-                        <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                        <div class="flex items-center pl-2 hover:bg-gray-200">
                             <i class="fa-regular fa-envelope"></i>
-                            <label class="py-2 ml-2 w-full text-sm text-gray-700 dark:text-gray-300">Support</label>
+                            <label class="py-2 ml-2 w-full text-sm text-gray-700">Support</label>
                         </div>
                         </li>
                     <li>
-                        <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                        <div class="flex items-center pl-2 hover:bg-gray-200">
                             <i class="fa-regular fa-wave-pulse"></i>
-                            <label class="py-2 ml-2 w-full text-sm text-gray-700 dark:text-gray-300">Status</label>
+                            <label class="py-2 ml-2 w-full text-sm text-gray-700">Status</label>
                         </div>
                         </li>
                     <li>
-                            <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                            <div class="flex items-center pl-2 hover:bg-gray-200">
                                 <i class="fa-regular fa-rocket-launch"></i>
-                                <label class="py-2 ml-2 w-full text-sm text-gray-700 dark:text-gray-300">Actions</label>
+                                <label class="py-2 ml-2 w-full text-sm text-gray-700">Actions</label>
                             </div>
                             </li>
                     </ul>
                 </div> 
                                 
-            <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-auto mr-4 p-1 items-center text-sm font-medium text-gray-200 rounded hover:bg-primary-800 dark:hover:text-blue-500" type="button">
+            <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-auto mr-4 p-1 items-center text-sm font-medium text-gray-200 rounded hover:bg-primary-800" type="button">
                 <span class="sr-only">Open user menu</span>
                 <img class="mr-2 w-8 h-8 rounded-full" src="images/Dylan_Etkin.jpg" alt="user photo">
                     <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
 
             <!-- Dropdown menu -->
-            <div id="dropdownAvatarName" data-dropdown-placement="bottom-start" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg dark:bg-gray-700 dark:divide-gray-600">
-                <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+            <div id="dropdownAvatarName" data-dropdown-placement="bottom-start" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg">
+                <div class="py-3 px-4 text-sm text-gray-900">
                 <div class="font-medium ">Dylan Etkin</div>
                 <div class="truncate">detkin@sleuth.io</div>
                 </div>
-                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+                <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
                 <li>
-                    <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                    <div class="flex items-center pl-2 hover:bg-gray-200">
                         <i class="fa-regular fa-screwdriver-wrench"></i>
-                        <label class="py-2 ml-2 w-full text-sm text-gray-700 dark:text-gray-300">Account setup</label>
+                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Account setup</label>
                     </div>
                 </li>
                 <li>
-                    <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                    <div class="flex items-center pl-2 hover:bg-gray-200">
                         <i class="fa-regular fa-edit"></i>
-                        <label class="py-2 ml-2 w-full text-sm text-gray-700 dark:text-gray-300">Manage account</label>
+                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Manage account</label>
                     </div>
                 </li>
                 
                 </ul>
-                <div class="py-1 text-sm text-gray-700 dark:text-gray-200">
-                    <div class="flex items-center pl-2 hover:bg-gray-200 dark:hover:bg-gray-600">
+                <div class="py-1 text-sm text-gray-700">
+                    <div class="flex items-center pl-2 hover:bg-gray-200">
                         <i class="fa-regular fa-arrow-right-from-bracket"></i>
-                    <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                    <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200">Sign out</a>
                     </div>
 
                 </div>
@@ -558,16 +563,16 @@
     <!--Side content-aware anvigation bar-->
 
 <aside class="w-64 fixed z-0" aria-label="Sidebar">
-    <div class="overflow-auto scrollbar-hide h-screen py-5 px-3 bg-gray-100 dark:bg-gray-800">
+    <div class="overflow-auto scrollbar-hide h-screen py-5 px-3 bg-gray-100">
         <a href="#" class="flex items-center pl-0 mb-5">
             <img src="/images/sleuth_blue_logo.svg" class="mr-3 h-6 sm:h-7" alt="Sleuth Logo"/>
-            <span class="self-center text-md text-gray-700 whitespace-nowrap dark:text-white">Sleuth app</span>
+            <span class="self-center text-md text-gray-700 whitespace-nowrap">Sleuth app</span>
         </a>
-        <ul class="space-y-2 border-t border-gray-200 dark:border-gray-700">
+        <ul class="space-y-2 border-t border-gray-200">
             <li>
-                <button type="button" class="flex items-center p-2.5 mb-2 mt-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-environment" data-collapse-toggle="dropdown-environment">
+                <button type="button" class="flex items-center p-2.5 mb-2 mt-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300" aria-controls="dropdown-environment" data-collapse-toggle="dropdown-environment">
                     <div class="flex-1 text-left whitespace-nowrap">
-                    <span class="bg-green-100 text-green-800 text-xs font-semibold border border-green-500 mr-2 px-2 py-1 rounded dark:bg-green-200 dark:text-green-900">Production</span>
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold border border-green-500 mr-2 px-2 py-1 rounded">Production</span>
                     </div>
                     <i class="fa-regular fa-angle-down"></i>
                 </button>
@@ -576,40 +581,40 @@
                         <div class="flex p-2 items-center rounded-lg transition duration-75 group">
                             <div class="flex-1 text-left whitespace-nowrap">
                                 <i class="pr-2 text-green-500 fa-solid fa-check"></i>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold border border-green-500 mr-2 px-2 py-1 rounded dark:bg-green-200 dark:text-green-900">Production</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold border border-green-500 mr-2 px-2 py-1 rounded">Production</span>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="flex p-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                        <div class="flex p-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                             <div class="flex-1 text-left whitespace-nowrap">
-                                <span class="bg-orange-100 text-orange-800 text-xs font-semibold border border-orange-500 mr-2 px-2 py-1 rounded dark:bg-orange-200 dark:text-orange-900">Staging</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs font-semibold border border-orange-500 mr-2 px-2 py-1 rounded">Staging</span>
                             </div>                        
                         </div>
                     </li>
         </ul>
     <ul>
         <li>
-            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-chart-column"></i>
                 <span class="ml-3">Metrics</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-bars-progress"></i>
             <span class="ml-3">Work in progress</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+            <a href="#" class="flex items-center p-2  mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <img class="w-3" src="https://staging.sleuth.io/static/img/heartbeat_green.png" alt="logo"> 
                 <span class="ml-3">Status</span>
             </a>
         </li>
     </ul>
         <li>
-            <button type="button" class="flex items-center p-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+            <button type="button" class="flex items-center p-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                 <i class="fa-solid fa-ellipsis"></i>
                 <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item="">More</span>
                 <i class="fa-regular fa-angle-down"></i>
@@ -617,21 +622,21 @@
             <ul id="dropdown-example" class="hidden ml-4 py-4 space-y-2">
                 <li>
                     <span class="m-2 text-xs font-semibold text-gray-600">CODE DEPLOYMENTS</span>
-                        <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                        <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                             <i class="text-gray-700 text-sm ml-4 fa-regular fa-cubes"></i>
                             <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Application</a>
                             <i class="text-gray-700 text-sm mr-4 fa-regular fa-lock"></i>
                         </div>
                     </li>
                     <li>
-                        <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                        <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                             <i class="text-gray-700 text-sm ml-4 fa-regular fa-cubes"></i>
                             <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Documentation</a>
                             <i class="text-gray-700 text-sm mr-4 fa-regular fa-lock"></i>
                         </div>
                         </li>
                     <li>
-                        <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                        <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                             <i class="text-gray-700 ml-4 text-sm fa-regular fa-cubes"></i>
                             <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Terraform</a>
                             <i class="text-gray-700 text-sm mr-4 fa-regular fa-lock"></i>
@@ -640,59 +645,59 @@
                     <div>
                         <li>
                             <span class="ml-2 text-xs font-semibold text-gray-600">FEATURE FLAGS</span>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-solid fa-flag-pennant"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Feature Flags</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Feature Flags</a>
                                 </div>
                             </li> 
                     </div>
                     <div>
                         <li>
                             <span class="ml-2 text-xs font-semibold text-gray-600">MANUAL DEPLOYS</span>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-typewriter"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Manual changes</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Manual changes</a>
                                 </div>
                         </li>
                     </div>
                     <div>
                         <li>
                             <span class="ml-2 text-xs font-semibold text-gray-600">IMPACT SOURCES</span>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">ALB 5xx</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">ALB 5xx</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Memory (app)</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Memory (app)</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Memory (celery)</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Memory (celery)</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">PagerDuty</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">PagerDuty</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">RDS CPU</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">RDS CPU</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Remote login</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Remote login</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Scheduled jobs</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Scheduled jobs</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Sentry errors</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Sentry errors</a>
                                 </div>
-                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">
+                                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-300">
                                     <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300 dark:text-white dark:hover:bg-gray-700">Statuspage</a>
+                                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700 rounded-lg transition duration-75 group hover:bg-gray-300">Statuspage</a>
                                 </div>
                         </li>
                         </li>
@@ -702,14 +707,14 @@
         </li>
         
         <li>
-            <a href="#" class="flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+            <a href="#" class="flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-bolt"></i>
                 <span class="flex-1 ml-3 whitespace-nowrap">Automations</span>
-                <span class="inline-flex justify-center items-center px-2 ml-3 text-xs text-orange-700 bg-orange-200 border border-orange-700 rounded dark:bg-gray-700 dark:text-gray-300">Beta</span>
+                <span class="inline-flex justify-center items-center px-2 ml-3 text-xs text-orange-700 bg-orange-200 border border-orange-700 rounded">Beta</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+            <a href="#" class="flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-bell"></i>
                 <span class="flex-1 ml-3 whitespace-nowrap">Notifications</span>
                 
@@ -717,7 +722,7 @@
         </li>
         
             <li>
-                <a href="#" class="mb-8 flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                <a href="#" class="mb-8 flex items-center p-2 mt-3 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-300">
                 <i class="fa-regular fa-cog"></i>
                 <span class="flex-1 ml-3 whitespace-nowrap">Settings</span>
                 
@@ -731,7 +736,7 @@
  
  <!--
     <alert class="flex flex-col justify-center mt-8 ml-32 mr-32">
-        <div class="w-full flex items-center p-2 mb-2 text-sm text-red-700 bg-red-200 border border-red-500 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
+        <div class="w-full flex items-center p-2 mb-2 text-sm text-red-700 bg-red-200 border border-red-500 rounded-lg" role="alert">
             <i class="fa-regular fa-circle-exclamation p-2"></i>
             <span class="sr-only">Info</span>
             <div>
