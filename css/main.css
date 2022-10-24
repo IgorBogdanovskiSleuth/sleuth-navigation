@@ -964,6 +964,11 @@ video {
   background-color: rgb(41 98 146 / var(--tw-bg-opacity));
 }
 
+.bg-primary-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 122 183 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1180,6 +1185,11 @@ video {
 .hover\:bg-primary-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(51 122 183 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 149 197 / var(--tw-bg-opacity));
 }
 
 .focus\:z-10:focus {
