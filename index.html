@@ -284,9 +284,8 @@
         </div>
     </div>
 </topnav>
-    
 
-    <!--Side content-aware anvigation bar-->
+<!--Side content-aware anvigation bar-->
 
 <aside class="w-64 fixed -z-20" aria-label="Sidebar">
     <div class="overflow-auto scrollbar-hide h-screen py-4 px-3 bg-gray-100">
@@ -295,7 +294,6 @@
         <button id="dropdownEnvironments" data-dropdown-toggle="dropdownEnv" data-dropdown-placement="bottom-start" class="text-green-700 bg-green-50 border border-green-700 hover:bg-green-200 content-between font-normal rounded text-xs px-2 py-1 mb-1 ml-2 text-left inline-flex items-center" type="button">
             <i class="fa-regular fa-server mr-2"></i>
             Production <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-
         </button>
         <!-- Dropdown menu -->
         <div id="dropdownEnv" class="hidden z-10 w-52 bg-white rounded divide-y divide-gray-100 shadow" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
@@ -336,183 +334,120 @@
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-show="drawer-disabled-backdrop" data-drawer-backdrop="false" aria-controls="drawer-disabled-backdrop">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" id="dropdownCodeDeploymentsButton" data-dropdown-toggle="dropdownCodeDeployments" data-dropdown-placement="right-start">
                 <i class="fa-regular fa-cubes"></i>
             <span class="ml-3 flex-1 text-left whitespace-nowrap">Code deployments</span>
             <i class="fa-regular fa-angle-right"></i>
             </a>
+             <!-- Code deployments dropdown -->
+             <div id="dropdownCodeDeployments" class="hidden z-10 w-64 bg-gray-50 border border-gray-200 rounded divide-y divide-gray-100 shadow-md">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCodeDeploymentsButton">
+                    <li>
+                        <div class="p-3">
+                            <label for="code-deployments-search" class="sr-only">Search</label>
+                            <div class="relative">
+                                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <input type="text" id="code-deployments-search" class="block p-2 pl-10 w-full text-sm text-gray-900 bg-white rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Search code deployments">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Application</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Terraform</a>
+                    </li>
+                </ul>
+            </div>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" type="button" data-drawer-target="drawer-disabled-ff" data-drawer-show="drawer-disabled-ff" data-drawer-backdrop="false" aria-controls="drawer-disabled-ff">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" id="dropdownFeatureFlagsButton" data-dropdown-toggle="dropdownFeatureFlags" data-dropdown-placement="right-start">
                 <i class="fa-regular fa-flag-pennant"></i>
             <span class="ml-3 flex-1 text-left whitespace-nowrap">Feature flags</span>
             <i class="fa-regular fa-angle-right"></i>
             </a>
+            <!-- Feature flags dropdown -->
+            <div id="dropdownFeatureFlags" class="hidden z-10 w-44 bg-gray-50 border border-gray-200 rounded divide-y divide-gray-100 shadow-md">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownFeatureFlagsButton">
+                <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100">LaunchDarkly flags</a>
+                </li>
+                </ul>
+            </div>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" type="button" data-drawer-target="drawer-disabled-mc" data-drawer-show="drawer-disabled-mc" data-drawer-backdrop="false" aria-controls="drawer-disabled-mc">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" id="dropdownManualDeploysButton" data-dropdown-toggle="dropdownManualDeploys" data-dropdown-placement="right-start">
                 <i class="fa-regular fa-typewriter"></i>
             <span class="ml-3 flex-1 text-left whitespace-nowrap">Manual deploys</span>
             <i class="fa-regular fa-angle-right"></i>
             </a>
+             <!-- Manual deploys dropdown -->
+            <div id="dropdownManualDeploys" class="hidden z-10 w-44 bg-gray-50 border border-gray-200 rounded divide-y divide-gray-100 shadow-md">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownManualDeploysButton">
+                <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100">Manual Changes</a>
+                </li>
+                </ul>
+            </div>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" type="button" data-drawer-target="drawer-disabled-is" data-drawer-show="drawer-disabled-is" data-drawer-backdrop="false" aria-controls="drawer-disabled-is">
+            <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" id="dropdownImpactSourceButton" data-dropdown-toggle="dropdownImpactSource" data-dropdown-placement="right-start">
                 <i class="fa-regular fa-heart-pulse"></i>
             <span class="ml-3 flex-1 text-left whitespace-nowrap">Impact sources</span>
             <i class="fa-regular fa-angle-right"></i>
             </a>
+             <!-- Impact source dropdown -->
+            <div id="dropdownImpactSource" class="hidden z-10 w-64 bg-gray-50 border border-gray-200 rounded divide-y divide-gray-100 shadow-md">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownImpactSourceButton">
+                    <li>
+                        <div class="p-3">
+                            <label for="impacet-source-search" class="sr-only">Search</label>
+                            <div class="relative">
+                                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <input type="text" id="impacet-source-search" class="block p-2 pl-10 w-full text-sm text-gray-900 bg-white rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Search impact sources">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">ALB 5xx </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Memory (app)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Memory (celery)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">PagerDuty</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">RDS CPU</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Remote login</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Scheduled jobs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Sentry errors</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100">Statuspage</a>
+                    </li>
+                </ul>
+            </div>
         </li>
         
     </ul>
-    
-
- <!-- Code deployments drawer component -->
- <div id="drawer-disabled-backdrop" class="fixed -z-10 h-screen p-2 overflow-y-auto bg-gray-50 border borger-gray-200 w-64 transition-transform left-64 top-8 -translate-x-full" tabindex="-1" aria-labelledby="drawer-disabled-ff" aria-hidden="true">
-    <div class="py-4 overflow-y-auto">
-       <ul class="space-y-2">
-        <li>
-            <div class="p-1">
-                <label for="input-deployments-search" class="sr-only">Search</label>
-                <div class="relative">
-                  <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                  </div>
-                  <input type="text" id="input-deployments-search" class="block p-2 pl-10 w-full text-sm text-gray-900 bg-white rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Search deployments">
-                </div>
-              </div>
-        </li>
-            <li data-drawer-dismiss="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop">
-                <div class="flex mt-2 items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 text-sm ml-4 fa-regular fa-cubes"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Application</a>
-                    <i class="text-gray-700 text-sm mr-4 fa-regular fa-lock"></i>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 text-sm ml-4 fa-regular fa-cubes"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Documentation</a>
-                    <i class="text-gray-700 text-sm mr-4 fa-regular fa-lock"></i>
-                </div>
-                </li>
-            <li>
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-cubes"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Terraform</a>
-                    <i class="text-gray-700 text-sm mr-4 fa-regular fa-lock"></i>
-                </div>
-            </li>
-       </ul>
-    </div>
- </div>
-
- <!-- Feature flags drawer component -->
- <div id="drawer-disabled-ff" class="fixed -z-10 h-screen p-2 overflow-y-auto bg-gray-50 border borger-gray-200 w-64 transition-transform left-64 top-8 -translate-x-full" tabindex="-1" aria-labelledby="drawer-disabled-ff" aria-hidden="true">
-    <div class="overflow-y-auto">
-       <ul class="space-y-2">
-            <li data-drawer-dismiss="drawer-disabled-ff" aria-controls="drawer-disabled-ff">
-                <div class="flex mt-5 items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 text-sm ml-4 fa-regular fa-flag-pennant"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">LaunchDarkly flags</a>
-                </div>
-            </li>
-       </ul>
-    </div>
- </div>
-
- <!-- Manual deploys drawer component -->
- <div id="drawer-disabled-mc" class="fixed -z-10 h-screen p-2 overflow-y-auto bg-gray-50 border borger-gray-200 w-64 transition-transform left-64 top-8 -translate-x-full" tabindex="-1" aria-labelledby="drawer-disabled-mc" aria-hidden="true">
-    <div class="overflow-y-auto">
-       <ul class="space-y-2">
-            <li data-drawer-dismiss="drawer-disabled-mc" aria-controls="drawer-disabled-mc">
-                <div class="flex mt-5 items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-typewriter"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Manual Changes</a>
-                </div>
-            </li>
-       </ul>
-    </div>
- </div>
-
- <!-- Impact sources drawer component -->
- <div id="drawer-disabled-is" class="fixed -z-10 h-screen p-2 overflow-y-auto bg-gray-50 border borger-gray-200 w-64 transition-transform left-64 top-12 -translate-x-full" tabindex="-1" aria-labelledby="drawer-disabled-is" aria-hidden="true">
-    <div class="overflow-y-auto">
-       <ul class="space-y-2">
-            <li>
-                <div class="p-1">
-                    <label for="input-impact-source-search" class="sr-only">Search</label>
-                    <div class="relative">
-                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                        <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                    </div>
-                    <input type="text" id="input-impact-source-search" class="block p-2 pl-10 w-full text-sm text-gray-900 bg-white rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Search impact sources">
-                    </div>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">ALB 5xx </a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Memory (app)</a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Memory (celery)</a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">PagerDuty</a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">RDS CPU</a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Remote login</a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Scheduled jobs</a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Sentry errors</a>
-                </div>
-            </li>
-            <li data-drawer-dismiss="drawer-disabled-is" aria-controls="drawer-disabled-is">
-                <div class="flex items-center rounded-lg transition duration-75 group hover:bg-gray-200">
-                    <i class="text-gray-700 ml-4 text-sm fa-regular fa-heart-pulse"></i>
-                    <a href="#" class="flex items-center p-2 pl-2 w-full text-sm font-normal text-gray-700">Statuspage</a>
-                </div>
-            </li>
-            
-       </ul>
-    </div>
- </div>
-
-
-
-
-
+ 
        <li>
                 <a href="#" class="mb-4 flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200">
                 <i class="fa-regular fa-cog"></i>
