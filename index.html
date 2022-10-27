@@ -291,9 +291,9 @@
     <div class="overflow-auto scrollbar-hide h-screen py-4 px-3 bg-gray-100">
         
     <ul>
-        <button id="dropdownEnvironments" data-dropdown-toggle="dropdownEnv" data-dropdown-placement="bottom-start" class="text-green-700 bg-green-50 border border-green-700 hover:bg-green-200 content-between font-normal rounded text-xs px-2 py-1 mb-1 ml-9 text-left inline-flex items-center" type="button">
+        <button id="dropdownEnvironments" data-dropdown-toggle="dropdownEnv" data-dropdown-placement="bottom-start" class="text-green-700 bg-green-50 border border-green-700 hover:bg-green-200 content-between font-normal rounded text-xs px-2 py-1 mb-1 ml-1 text-left inline-flex items-center" type="button">
             <i class="fa-regular fa-server mr-2"></i>
-            Production <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            Production <svg class="ml-20 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
         </button>
         <!-- Dropdown menu -->
         <div id="dropdownEnv" class="hidden z-10 w-52 bg-white rounded divide-y divide-gray-100 shadow" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
@@ -314,6 +314,7 @@
                 </div>
             </ul>
         </div>
+<div class="py-1 divide-y divide-gray-100">
     <ul>
         <li>
             <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200">
@@ -333,6 +334,7 @@
                 <span class="ml-3">Status</span>
             </a>
         </li>
+        <div class="border-b border-gray-300 w-full py-1"></div>
         <li>
             <a href="#" class="flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200" id="dropdownCodeDeploymentsButton" data-dropdown-toggle="dropdownCodeDeployments" data-dropdown-placement="right-start">
                 <i class="fa-regular fa-cubes"></i>
@@ -445,16 +447,18 @@
                 </ul>
             </div>
         </li>
-        
         </ul>
-            <li>
-                <a href="#" class="mb-4 flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200">
-                    <i class="fa-regular fa-cog"></i>
-                    <span class="flex-1 ml-3 whitespace-nowrap">Settings</span>
-                </a>
-            </li>   
-        </ul>
-    </div>
+        <li>
+        <div class="border-b border-gray-300 py-1"></div>
+        </li>
+        <li>
+            <a href="#" class="mb-4 flex items-center p-2 mt-2 text-sm font-normal text-gray-700 rounded-lg hover:bg-gray-200">
+                <i class="fa-regular fa-cog"></i>
+                <span class="flex-1 ml-3 whitespace-nowrap">Settings</span>
+            </a>
+        </li>
+    </ul>
+</div>
 </aside>
  
 
