@@ -32,9 +32,10 @@
             
             <li>
                 <span class="m-2 text-xs font-semibold text-gray-600">SWITCH TO</span>
-                <div class="flex items-center mt-1 pl-2 hover:bg-gray-200">
+                <div class="flex items-center mt-1 pl-4 hover:bg-gray-200">
                     <i class="fa-regular fa-inbox"></i>
-                <button id="doubleDropdownButtonProjects" data-dropdown-toggle="doubleDropdownProjects" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200">Projects<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                <button id="doubleDropdownButtonProjects" data-dropdown-toggle="doubleDropdownProjects" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200">Projects
+                    <i class="fa-regular fa-angle-right mr-2"></i>
                 </button>
                 </div>
                 <div id="doubleDropdownProjects" class="hidden z-10 w-64 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
@@ -67,9 +68,10 @@
                 </div>
             </li>
             <li>
-                <div class="flex items-center pl-2 hover:bg-gray-200">
+                <div class="flex items-center pl-4 hover:bg-gray-200">
                     <i class="fa-regular fa-users"></i>
-                    <button id="doubleDropdownButtonTeams" data-dropdown-toggle="doubleDropdownTeams" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200">Teams<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    <button id="doubleDropdownButtonTeams" data-dropdown-toggle="doubleDropdownTeams" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-2 w-full hover:bg-gray-200">Teams
+                    <i class="fa-regular fa-angle-right mr-2"></i>
                     </button>
                 </div>
                 <div id="doubleDropdownTeams" class="hidden z-10 w-64 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10px, 358px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="right-start">
@@ -124,7 +126,7 @@
             <span class="sr-only">Open user menu</span>
             <i class="fa-solid fa-square-plus mr-2"></i>
                 Add 
-                <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <i class="fa-regular fa-angle-down ml-2"></i>
         </button>
 
         <!-- Dropdown menu -->
@@ -188,10 +190,10 @@
                 <i class="fa-regular fa-down-left-and-up-right-to-center mr-2"></i>
                 Compare 
             </button>                
-                <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 pt-2 pb-2 items-center text-md font-medium text-white rounded hover:bg-primary-800" type="button">
+                <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 pt-2 pb-2 p-1 items-center text-md font-medium text-white rounded hover:bg-primary-800" type="button">
                     <span class="sr-only">Open user menu</span>
                     <i class="fa-regular fa-circle-question ml-1"></i>
-                    <svg class="w-4 h-4 mx-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <i class="fa-regular fa-angle-down fa-sm ml-2 mr-2s"></i>
                 </button>
                                         
                 <!-- Dropdown menu -->
@@ -228,7 +230,7 @@
             <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-auto mr-4 p-1 items-center text-sm font-medium text-white rounded hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-700" type="button">
                 <span class="sr-only">Open user menu</span>
                 <img class="mr-2 w-8 h-8 rounded-full" src="images/Dylan_Etkin.jpg" alt="user photo">
-                    <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <i class="fa-regular fa-angle-down"></i>
             </button>
 
             <!-- Dropdown menu -->
@@ -293,8 +295,8 @@
     <div class="overflow-auto scrollbar-hide h-screen bg-gray-100">
 
         <div class="flex items-center p-4 pl-2.5">
-            <div class="bg-white h-10 w-10 border border-gray-300 text-gray-500 p-2 rounded text-center">
-                <i class="fa-duotone fa-inbox fa-lg"></i>
+            <div class="bg-white h-10 w-10 border border-gray-300 text-gray-300 p-2 rounded text-center">
+                <i class="fa-regular fa-inbox fa-lg"></i>
             </div>
             <span class="self-center text-sm font-semibold text-gray-700 whitespace-nowrap ml-2">Sleuth app</span>
         </div>
