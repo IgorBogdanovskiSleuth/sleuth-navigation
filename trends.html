@@ -8,10 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/c4c8374823.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Sleuth Navigation 2023</title>
     <link rel="icon" type="image/x-icon" href="/images/sleuth_blue_logo.svg">
 </head>
-<body>
+
 
 <!--Top global navigation-->
 
@@ -262,7 +264,57 @@
     </div>
 </topnav>
 
-
+<main>
+    <div class="w-1/2">
+        <div class="shadow-lg rounded overflow-hidden">
+            <div class="py-3 px-5">Work in progress CLT</div>
+            <canvas class="p-10" id="chartBar"></canvas>
+          </div>
+          
+          <!-- Required chart.js -->
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <!-- Chart bar -->
+          <script>
+            
+            const labelsBarChart = [
+              "Total CLT",
+              "Coding time",
+              "Review lag time",
+              "Review time",
+              "Waiting to deploy",
+            ];
+            const dataBarChart = {
+              labels: labelsBarChart,
+              datasets: [
+                {
+                  label: "Baseline",
+                  backgroundColor: "grey",
+                  borderColor: "hsl(252, 82.9%, 67.8%)",
+                  data: [24, 24, 24, 12, 48,],
+                },
+                {
+                  label: "Current work in progress CLT",
+                  backgroundColor: "red",
+                  borderColor: "hsl(252, 82.9%, 67.8%)",
+                  data: [48, 30, 22, 6, 52,],
+                },
+              ],
+              
+            };
+            const configBarChart = {
+              type: "bar",
+              data: dataBarChart,
+              options: {},
+            };
+          
+            var chartBar = new Chart(
+              document.getElementById("chartBar"),
+              configBarChart
+            );
+          </script>
+    </div>
+</main>
 
 
     <!-- Spotlight search -->
@@ -506,8 +558,6 @@
     </div>
 </div>
 
-
-</body>
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/script.js"></script>
