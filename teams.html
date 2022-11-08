@@ -17,15 +17,13 @@
 
 <topnav class="flex items-center p-1 bg-primary-900 flex-wrap sticky top-0 z-10">
     <div class="mr-4 ml-2 inline-flex items-center rounded">
-        <img class="h-6" src="/images/sleuth_logo.svg" alt="Sleuth">
+        <img class="h-7" src="/images/sleuth_logo.svg" alt="Sleuth">
     </div>
-    
     <!--Project, team and label selector-->
-    <div class="ml-2">
+    <div class="">
         <div>
-            <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" data-dropdown-placement="bottom-start" class="text-white hover:bg-primary-800 pt-2 pb-2 pr-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-medium text-sm text-center inline-flex items-center" type="button">
-                <i class="fa-regular fa-bars fa-lg p-2 px-2.5"></i>
-                Switch to
+            <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" data-dropdown-placement="bottom-start" class="text-white hover:bg-primary-800 pt-2 pb-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-medium text-sm text-center inline-flex items-center" type="button">
+                <i class="fa-regular fa-bars fa-lg px-2.5"></i>
             </button>
         </div>
         <!-- Dropdown menu -->
@@ -114,7 +112,7 @@
 
     <!--Add and search section-->
 
-    <a href="https://staging.sleuth.io/sleuth/search" class="text-white bg-primary-700 hover:bg-primary-600 hover:text-white p-2 mr-2 ml-14 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-normal w-64 text-sm px-2 py-2.5 text-center inline-flex items-center">
+    <a href="https://staging.sleuth.io/sleuth/search" class="text-white bg-primary-700 hover:bg-primary-600 hover:text-white p-2 mr-2 ml-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-normal w-64 text-sm px-2 py-2.5 text-center inline-flex items-center">
         <i class="fa-light fa-magnifying-glass mr-2"></i>
         Search 
     </a>
@@ -167,26 +165,28 @@
         </div>
         </div>
 
-        <div class="lg:inline-flex lg:flex-row lg:ml-auto items-center"> 
-
-            <a href="/trends.html" class="text-white hover:bg-primary-800 hover:text-white active:bg-white active:text-primary-800 p-2 mr-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-normal text-sm px-2 py-2.5 text-center inline-flex items-center">
+        <button class="text-white hover:bg-primary-800 hover:text-white p-2 mr-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-light text-sm px-2 py-2.5 text-center inline-flex items-center">
+            <i class="fa-regular fa-heart-pulse mr-2"></i>
+            Status 
+        </button>
+        <a href="/trends.html" class="text-white hover:bg-primary-800 hover:text-white active:bg-white active:text-primary-800 p-2 mr-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-light text-sm px-2 py-2.5 text-center inline-flex items-center">
                 <i class="fa-regular fa-chart-line-up mr-2"></i>
                 Trends 
         </a> 
-            <button class="text-white hover:bg-primary-800 hover:text-white p-2 mr-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-normal text-sm px-2 py-2.5 text-center inline-flex items-center">
-                <i class="fa-regular fa-down-left-and-up-right-to-center mr-2"></i>
-                Compare 
-            </button>                
-                <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 pt-2 pb-2 p-1 items-center text-md font-medium text-white rounded hover:bg-primary-800" type="button">
-                    <span class="sr-only">Open user menu</span>
-                    <i class="fa-regular fa-circle-question ml-1"></i>
-                    <i class="fa-regular fa-angle-down fa-sm ml-2 mr-2s"></i>
-                </button>
-                                        
-                <!-- Dropdown menu -->
-                <div id="dropdownHelp" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
-                    
-                    <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+        <button class="text-white hover:bg-primary-800 hover:text-white p-2 mr-2 rounded focus:ring-2 focus:outline-none focus:ring-primary-700 font-light text-sm px-2 py-2.5 text-center inline-flex items-center">
+            <i class="fa-regular fa-down-left-and-up-right-to-center mr-2"></i>
+            Compare 
+        </button>                  
+            <button id="help" data-dropdown-toggle="dropdownHelp" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-1 mr-4 pt-2 pb-2 p-1 items-center text-md font-medium text-white rounded hover:bg-primary-800" type="button">
+                <span class="sr-only">Open user menu</span>
+                <i class="fa-regular fa-circle-question ml-1"></i>
+                <i class="fa-regular fa-angle-down fa-sm ml-2 mr-2s"></i>
+            </button>
+                                    
+            <!-- Dropdown menu -->
+            <div id="dropdownHelp" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+                
+                <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
                     <li>
                         <div class="flex items-center pl-2 hover:bg-gray-200">
                             <i class="fa-regular fa-book"></i>
@@ -204,75 +204,75 @@
                             <i class="fa-regular fa-wave-pulse"></i>
                             <label class="py-2 ml-2 w-full text-sm text-gray-700">Status</label>
                         </div>
-                        </li>
-                    <li>
+                    </li>
+                        <li>
                             <div class="flex items-center pl-2 hover:bg-gray-200">
                                 <i class="fa-regular fa-rocket-launch"></i>
                                 <label class="py-2 ml-2 w-full text-sm text-gray-700">Actions</label>
                             </div>
-                            </li>
-                    </ul>
-                </div> 
-                                
-            <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-auto mr-4 p-1 items-center text-sm font-medium text-white rounded hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-700" type="button">
-                <span class="sr-only">Open user menu</span>
-                <img class="mr-2 w-8 h-8 rounded-full" src="images/Dylan_Etkin.jpg" alt="user photo">
-                <i class="fa-regular fa-angle-down"></i>
-            </button>
+                        </li>
+                </ul>
+            </div> 
+                            
+        <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" data-dropdown-placement="bottom-start" class="lg:inline-flex lg:flex-row lg:ml-auto mr-4 p-1 items-center text-sm font-medium text-white rounded hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-700" type="button">
+            <span class="sr-only">Open user menu</span>
+            <img class="mr-2 w-8 h-8 border-2 border-primary-300 rounded-full" src="images/Dylan_Etkin.jpg" alt="user photo">
+            <i class="fa-regular fa-angle-down"></i>
+        </button>
 
-            <!-- Dropdown menu -->
-            <div id="dropdownAvatarName" data-dropdown-placement="bottom-start" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg">
-                <div class="py-3 px-4 text-sm text-gray-900">
-                <div class="font-medium ">Dylan Etkin</div>
-                <div class="truncate">detkin@sleuth.io</div>
+        <!-- Dropdown menu -->
+        <div id="dropdownAvatarName" data-dropdown-placement="bottom-start" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-200 shadow-lg">
+            <div class="py-3 px-4 text-sm text-gray-900">
+            <div class="font-medium ">Dylan Etkin</div>
+            <div class="truncate">detkin@sleuth.io</div>
+            </div>
+            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+            <li>
+                <div class="flex items-center pl-2 text-gray-700 hover:bg-gray-200">
+                    <i class="fa-regular fa-screwdriver-wrench"></i>
+                    <label class="py-2 ml-2 w-full text-sm text-gray-700">Account setup</label>
                 </div>
-                <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
-                <li>
-                    <div class="flex items-center pl-2 hover:bg-gray-200">
-                        <i class="fa-regular fa-screwdriver-wrench"></i>
-                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Account setup</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="flex items-center pl-2 hover:bg-gray-200">
-                        <i class="fa-regular fa-edit"></i>
-                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Manage account</label>
-                    </div>
-                </li>
+            </li>
+            <li>
+                <div class="flex items-center pl-2 hover:bg-gray-200">
+                    <i class="fa-regular fa-edit"></i>
+                    <label class="py-2 ml-2 w-full text-sm text-gray-700">Manage account</label>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="flex items-center pl-2 hover:bg-gray-200">
+                    <i class="fa-regular fa-puzzle-piece text-gray-700"></i>
+                    <label class="py-2 ml-2 w-full text-sm text-gray-700">Integrations</label>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center pl-2 hover:bg-gray-200">
+                    <i class="fa-regular fa-cog text-gray-700"></i>
+                    <label class="py-2 ml-2 w-full text-sm text-gray-700">Org settings</label>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center pl-2 hover:bg-gray-200">
+                    <i class="fa-regular fa-credit-card text-gray-700"></i>
+                    <label class="py-2 ml-2 w-full text-sm text-gray-700">Billing</label>
+                </div>
+            </li>
+            
             </ul>
-            <ul>
-                <li>
+                <div class="py-1 text-sm text-gray-700">
                     <div class="flex items-center pl-2 hover:bg-gray-200">
-                        <i class="fa-regular fa-puzzle-piece"></i>
-                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Integrations</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="flex items-center pl-2 hover:bg-gray-200">
-                        <i class="fa-regular fa-cog"></i>
-                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Org settings</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="flex items-center pl-2 hover:bg-gray-200">
-                        <i class="fa-regular fa-credit-card"></i>
-                        <label class="py-2 ml-2 w-full text-sm text-gray-700">Billing</label>
-                    </div>
-                </li>
-                
-                </ul>
-                    <div class="py-1 text-sm text-gray-700">
-                        <div class="flex items-center pl-2 hover:bg-gray-200">
-                            <i class="fa-regular fa-arrow-right-from-bracket"></i>
-                        <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200">Sign out</a>
-                    </div>
-                </ul>
+                        <i class="fa-regular fa-arrow-right-from-bracket"></i>
+                    <a href="#" class="block py-2 px-2 text-sm text-gray-700 hover:bg-gray-200">Sign out</a>
                 </div>
+            </ul>
             </div>
-            </div>
-
         </div>
+        </div>
+
     </div>
+</div>
 </topnav>
     
 
